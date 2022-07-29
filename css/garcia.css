@@ -1,0 +1,751 @@
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+* {
+    box-sizing: border-box !important;
+    
+}
+
+.load {
+    width: auto;
+    height: 100%;
+    background-color: #273c75;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+
+.load img {
+    width: 300px;
+    transition: all 0.5s;
+    /* animation: rotate 2.5s infinite; */
+}
+
+
+body {
+ margin: 0 !important;
+ padding: 0;
+}
+
+.up-to-home {
+    position: fixed;
+    background: #555a61;
+    z-index: 2;
+    right: 10px !important;
+    padding: 5px 15px;
+    bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.5s;
+    display: none;
+}
+.up-to-home i {
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+.up-to-home:hover {
+    box-shadow: 0 0px 30px rgb(0 0 0 / 15%);
+    transform: translateY(-10px);
+    right: 10px;
+    bottom: 20px !important;
+
+}
+.up-to-home:hover i {
+    margin-bottom: 7px;
+}
+
+.content {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+    transition: all 0.3s ease-out 0s;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+
+.space-around {
+justify-content: space-around !important;
+}
+
+
+.none {
+    display: none !important;
+}
+
+/* start scroll bar design */
+::-webkit-scrollbar {
+    background-color: #555a61;
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #273c75 !important;
+    border-radius: 20px;
+    height: 70px;
+}
+
+
+/* end scroll bar design */
+
+
+/* start header */
+
+header {
+    background-image: url('../images/hero-bg.jpg');
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.header-section {
+    background-color: transparent;
+    left: 0;
+    position: absolute;
+    right: 0;
+    padding: 20px 0;
+    top: 0;
+}
+
+
+.navi {
+   transition: all 0.5s;
+    background-color: #fff;
+    box-shadow: 0 0 13px rgb(0 0 0 / 15%);
+    padding: 20px 0px;
+    animation: show 1s;
+    -webkit-animation: show 1s;
+    animation-fill-mode: forwards;
+    z-index: 2 !important;
+}
+
+.navi .buy-btn {
+    background-color: #000;
+    color: #fff;
+}
+
+.bg-over {
+    padding: 300px 0 250px;
+}
+.anmi {
+    position: relative;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    height: 400px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.bg-over::before {
+    background-color: #000;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0.7;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.logo {
+    float: left !important;
+}
+
+.buy-btn {
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    display: inline-block;
+    line-height: 24px;
+    margin-top: 9px;
+    padding: 7px 25px;
+    text-transform: uppercase;
+    border-color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: 600;
+    transition: all ease 0.5s !important;
+    float: right;
+}
+
+.buy-btn:hover {
+    text-decoration: none;
+    border-color: #0163d2 !important;
+    background-color: #0163d2 !important;
+    color: #ffffff;
+}
+
+
+.title-home {
+    color: #ffffff !important;
+    position: absolute;
+    right: 0;
+    left: -3900px;
+    
+}
+.title-home h1 {
+color: #ffffff !important;
+}
+.title-home h1 strong {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    display: block;
+}
+.title-home p {
+    color: #fff;
+    margin: 20px auto 0;
+    max-width: 650px;
+}
+.text {
+    text-align: -webkit-right !important
+}
+
+.btn-tow {
+    text-align: -webkit-center !important;
+    padding-top: 40px;
+     position: absolute;
+     top: 200px;
+    left: 2655px;
+    right: 0;
+}
+
+.bt-tow {
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 24px;
+    margin-top: 0;
+    padding: 6px 35px;
+    text-transform: uppercase;
+    width: 165px;
+    transition: all 0.5s;
+}
+
+.bt-tow:hover {
+    cursor: pointer;
+    text-decoration: none !important;
+    border-color: #0163d2 !important;
+    background-color: #0163d2 !important;
+    color: #ffffff;
+}
+/* end header */
+
+/* start home pages */
+
+.ptb {
+    padding-top: 120px;
+    padding-bottom: 70px;
+}
+.pag-h1 {
+    margin-bottom: 40px;
+}
+
+.home-pages {
+    padding-top: 120px;
+    padding-bottom: 70px;
+}
+
+.demo-item-main {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s; 
+    height: 450px;
+}
+
+.demo-item-content {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s; 
+    height: 300px;
+}
+
+.over img {
+    border: 1px solid #f1f1f1 !important;
+    border-radius: 10px;
+}
+
+.over img:hover {
+    box-shadow: 0 15px 30px rgb(0 0 0 / 15%) !important;
+    transform: translateY(10px) !important;
+}
+
+/* start animation home */
+.home_one {
+    position: absolute;
+    left: 0;
+    top: -1850px;
+    bottom: 0;
+    right: 0;
+}
+
+.home_tow {
+    position: absolute;
+    left: 0;
+    top: 1850px;
+    bottom: 0;
+    right: 0;
+}
+
+/* end animation home */
+
+
+/* start animation shop pages */
+
+.shop-2, .shop-3,
+ .shop-7, .other-sh-3,
+  .blog-2, .blog-3,
+   .xml-press-1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1500px;
+    bottom : 0px;
+}
+
+
+.shop-0, .shop-4,
+ .shop-6,.shop-11,
+ .other-sh-5, .blog-0,
+  .blog-4, .xml-press-0,
+  .xml-press-2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 1000px;
+}
+
+.shop-1, .shop-5 , .shop-8, .shop-10,.other-sh-4, .blog-1, .blog-5 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -700px;
+    bottom : 0px;
+}
+
+.shop-9 {
+    position: absolute;
+    left: -1100px;
+    right: 0;
+    top: 0;
+    bottom : 0;
+}
+
+
+
+
+/* end animation shop pages */
+
+
+/* start animation in pages */
+
+.other-sh-0,  .other-sh-6, .xml-press-1 {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 800px;
+    bottom: 0;
+}
+
+.other-sh-1, .other-sh-7, .also-1 {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: -800px;
+    bottom: 0;
+}
+.other-sh-2, .other-sh-8, .also-0, .also-2  {
+    position: absolute;
+    right: 0;
+    left: 800px;
+    top: 0;
+    bottom: 0;
+}
+/* end animation in pages   */
+
+
+
+
+.demo-item .image {
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+
+.image img {
+    border: 1px solid #f1f1f1 !important;
+    width: 280px;
+    border-radius: 10px;
+}
+
+.image img:hover {
+    box-shadow: 0 15px 30px rgb(0 0 0 / 15%);
+    transform: translateY(10px);
+}
+
+
+.dem {
+    box-shadow: 0 15px 30px rgb(0 0 0 / 15%) !important;
+    transform: translateY(10px) !important;
+}
+
+
+.title {
+    text-transform: capitalize;
+    margin-top: 20px;
+    font-size: 15px;
+    margin: 30px 0 0;
+    color: #3f3f3f !important;
+}
+
+
+.title a {
+    display: block;
+    padding: 5px;
+    color: #3f3f3f !important;
+    transition: all 0.5s;
+}
+
+ .title a:hover {
+    color: #0163d2 !important;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+/* end home pages */
+
+
+
+/* start shop pages */
+
+.shop-pages {
+    background-color: #f6f6f6 !important;
+}
+
+/* end shop pages */
+
+
+
+/* start garcia featurs */
+
+.garcia-featurs {
+    padding-top: 120px;
+    padding-bottom: 70px;  
+}
+
+.garcia-featurs h1 {
+    color: #373737;
+    display: block;
+    font-weight: 500;
+    line-height: 28px;
+    margin: 0;
+    position: relative;
+    text-transform: capitalize;
+    z-index: 0;
+    margin-bottom: 70px;
+}
+
+.feat {
+    margin-bottom: 50px !important;
+}
+
+.ico-feat {
+    color: #0163d2;
+    width: 50px;
+    margin-right: 20px !important;
+    float: left;
+}
+
+.ico-feat i {
+    display: block;
+    font-size: 36px;
+}
+
+.content-fix {
+    overflow: hidden;
+}
+
+.content-fix h4 {
+    display: block;
+    font-size: 18px !important;
+    font-weight: normal;
+    line-height: 23px;
+    padding-bottom: 2px;
+    text-transform: capitalize;
+}
+
+.content-fix p {
+    color: #666;
+    margin: 0;
+}
+.also-h1 {
+    font-size: 1.6rem;
+}
+
+
+/* end garcia featurs */
+
+
+/* start footer  */
+
+
+.foot-web {
+    background-image: url('../images/hero-bg.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+.foot-web::before {
+    background-color: #000;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0.7;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+.foot-web h1 {
+    color: #fff;
+    display: block;
+    float: left;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.foot-web a {
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    color: #ffffff;
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 24px;
+    margin-top: 0;
+    padding: 6px 35px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+
+.foot-web a:hover {
+    text-decoration: none;
+    background-color: #0163d2;
+    border-color: #0163d2;
+    color: #ffffff; 
+}
+
+/* end footer */
+
+
+
+/* start media query*/
+
+
+
+@media only screen and (max-width: 767px) {
+    .bg-over {
+        padding: 150px 0px 100px;
+    }
+}
+@media only screen and (max-width: 467px) {
+    .navi img {
+        width: 100%;
+    }
+    .logo img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 438px) {
+    .buy-btn {
+        font-size: 10px;
+    }
+    .title-home h1 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 533px) {
+    .foot-web a {
+        font-size: 10px;
+        padding: 6px 15px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    .image-other img {
+        width: 300px;
+    }
+    .demo-item-content {
+        height: 400px !important;
+    }
+}
+
+
+
+ @media screen and (min-width: 768px) and (max-width: 992px){
+
+    .demo-item-main {
+        height: 405px;
+    }
+    .image-h img {
+        border: 1px solid #f1f1f1 !important;
+        width: 60% !important;
+        border-radius: 10px;
+    }
+    .over img {
+        border: 1px solid #f1f1f1 !important;
+        width: 100%;
+        border-radius: 10px;
+    }
+ }
+
+ @media screen and (min-width:768px) and (max-width:835px) {
+    .demo-item-content {
+        height: 270px !important;
+    }
+ }
+
+
+ @media screen and (min-width: 576px) and (max-width: 767px){
+    .image-other img {
+        width: auto !important;
+    }
+  
+    .btn-tow {
+        top: 240px;
+    }
+
+ }
+
+ @media screen and (min-width: 438px) and (max-width: 576px){
+    .btn-tow {
+        top: 200px;
+    }
+    .title-home h1 {
+        font-size: inherit;
+    }
+ }
+
+ @media screen and (min-width: 200px) and (max-width: 438px) {
+    .btn-tow {
+        padding-top: 30px;
+    }   
+    .bg-over {
+        padding-top: 150px 0px;
+    }
+ }
+
+
+
+ @media screen and (min-width: 200px) and (max-width: 768px) {
+    
+    .demo-item-main, .demo-item-content {
+        height: auto;
+    }
+}
+    
+ @media screen and (min-width: 200px) and (max-width: 576px) {
+    
+h1, .title-home h1 strong {
+font-size: 1.5rem !important;
+
+}
+.title-home p {
+font-size: 0.9rem;
+}
+ }
+    
+ @media screen and (min-width: 200px) and (max-width: 400px) {
+    .btn-tow {
+        margin-top: 30px;
+    }
+    .over img {
+    width: 75%;
+}
+    .shop-11 {
+    margin-top: 3rem;
+}
+    .mr-50 {
+    margin-top: -50px;
+}
+     }
+
+     @media screen and (min-width: 200px) and (max-width: 767px) {
+        .mr-50 {
+            margin-top: -50px;
+        }
+        .shop-11 {
+            margin-top: 3rem;
+        }
+
+    .home_one, .home_tow, 
+     .shop-0, .shop-1,
+      .shop-2, .shop-3,
+       .shop-4, .shop-5,
+       .shop-6, .shop-7,
+       .shop-8, .shop-9,
+       .shop-10, .shop-11,
+       .other-sh-0,.other-sh-1,
+       .other-sh-2,.other-sh-3,
+       .other-sh-4,.other-sh-5,
+       .other-sh-6,.other-sh-7,
+       .blog-0, .blog-1,
+       .blog-2, .blog-3,
+       .blog-4, .blog-5,
+       .also-0, .also-1, .also-2,
+       .xml-press-0, .xml-press-1,
+       .xml-press-2
+       {
+        position: static;
+    }
+}
+
+ /* end media query */
+
+
+
+/* start animation navbar */
+@keyframes show {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* end animation navbar */
